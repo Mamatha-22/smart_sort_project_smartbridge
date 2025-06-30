@@ -1,1 +1,0 @@
-# smart_sort_project_smartbridge
