@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit & Vegetable Freshness Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0fff0;
+            padding: 30px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        input[type="file"] {
+            margin-top: 15px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fresh or Rotten Classifier 🍎🥦</h1>
+    <p>Select an image of a fruit or vegetable:</p>
+
+    <input type="file" id="imageUpload" accept="image/*"><br>
+
+    <button onclick="classifyImage()">Check Freshness</button>
+
+    <div id="result"></div>
+
+    <script>
+        function classifyImage() {
+            const resultElement = document.getElementById("result");
+
+            // Placeholder logic for classification
+            const results = ["Fresh 🍏", "Rotten 🥀"];
+            const selectedResult = results[Math.floor(Math.random() * results.length)];
+
+            resultElement.innerText = "Result: " + selectedResult;
+        }
+    </script>
+
+</body>
+</html>

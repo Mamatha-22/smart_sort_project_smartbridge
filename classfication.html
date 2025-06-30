@@ -1,0 +1,10 @@
+// output.js
+function checkFreshness() {
+    const resultElement = document.getElementById("result");
+
+    // Simulated classification logic
+    const results = ["Fresh 🍏", "Rotten 🥀"];
+    const selectedResult = results[Math.floor(Math.random() * results.length)];
+
+    resultElement.innerText = "Result: " + selectedResult;
+}
